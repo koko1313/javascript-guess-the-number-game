@@ -7,7 +7,7 @@
 <body>
     <p class="infoBox" id="infoBox">Опитай се да познаеш числото</p>
     <p class="infoBox">Брой опити: <span id="counter">0</span></p>
-    <input type="number" id="numberField" />
+    <input type="number" id="numberField" onkeyup="numberChange()" />
     <button id="guessButton" onClick="check()" disabled>Познай</button>
     <button id="resetButton" onClick="reset()">Рестартирай</button>
     <script src="./script.js"></script>

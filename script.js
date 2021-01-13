@@ -44,6 +44,12 @@ function reset() {
     randomNumber = generateRandomNumber();
 }
 
+function numberChange() {
+    if (inputField.value != "") {
+        guessButton.disabled = false;
+    }
+}
+
 function generateRandomNumber() {
     return Math.floor(Math.random() * maxNumber);
 }
