@@ -1,3 +1,8 @@
+@font-face {
+    font-family: pressStart2P;
+    src: url("./PressStart2P-Regular.ttf");
+}
+
 body {
     background-color: #333333;
     display: flex;
@@ -15,11 +20,22 @@ body {
     height: 20vh;
     font-size: 15vh;
     border-radius: 1.5rem;
+    text-align: center;
 }
 
-#guessButton {
+button {
     width: 40%;
     height: 10vh;
     font-size: 5vh;
     margin-top: 2rem;
+}
+
+#resetButton {
+    display: none;
+}
+
+.infoBox {
+    color: #ffffff;
+    font-size: 2rem;
+    font-family: pressStart2P;
 }

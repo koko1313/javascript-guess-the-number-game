@@ -5,7 +5,11 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <input type="number" id="numberField">
-    <button id="guessButton">Познай</button>
+    <p class="infoBox" id="infoBox">Опитай се да познаеш числото</p>
+    <p class="infoBox">Брой опити: <span id="counter">0</span></p>
+    <input type="number" id="numberField" />
+    <button id="guessButton" onClick="check()" disabled>Познай</button>
+    <button id="resetButton" onClick="reset()">Рестартирай</button>
+    <script src="./script.js"></script>
 </body>
 </html>
