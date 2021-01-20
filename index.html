@@ -5,11 +5,18 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <p class="infoBox" id="infoBox">Опитай се да познаеш числото</p>
-    <p class="infoBox">Брой опити: <span id="counter">0</span></p>
-    <input type="number" id="numberField" onkeyup="numberChange()" />
-    <button id="guessButton" onClick="check()" disabled>Познай</button>
-    <button id="resetButton" onClick="reset()">Рестартирай</button>
+    <div id="inputSettings">
+        <p class="infoBox">Въведи максимално число</p>
+        <input type="number" id="maxNumber">
+        <button onClick="startGame()">Започни игра</button>
+    </div>
+    <div id="playground">
+        <p class="infoBox" id="infoBox">Опитай се да познаеш числото</p>
+        <p class="infoBox">Брой опити: <span id="counter">0</span></p>
+        <input type="number" id="numberField" onkeyup="numberChange()" />
+        <button id="guessButton" onClick="check()" disabled>Познай</button>
+        <button id="resetButton" onClick="reset()">Рестартирай</button>
+    </div>
     <script src="./script.js"></script>
 </body>
 </html>

@@ -15,7 +15,7 @@ body {
     overflow: hidden;
 }
 
-#numberField {
+input {
     width: 50%;
     height: 20vh;
     font-size: 15vh;
@@ -38,4 +38,8 @@ button {
     color: #ffffff;
     font-size: 2rem;
     font-family: pressStart2P;
+}
+
+#playground {
+    display: none;
 }

@@ -3,13 +3,15 @@ const infoBox = document.getElementById("infoBox");
 const counterBox = document.getElementById("counter");
 const guessButton = document.getElementById("guessButton");
 const resetButton = document.getElementById("resetButton");
+const playground = document.getElementById("playground");
+const inputSetting = document.getElementById("inputSettings");
+const maxNumberField = document.getElementById("maxNumber");
 
 // ############################################################
 
-const maxNumber = 100;
+let maxNumber = 100;
 let counter = 0;
-
-let randomNumber = generateRandomNumber();
+let randomNumber = null;
 
 // ############################################################
 
@@ -41,7 +43,17 @@ function reset() {
     infoBox.innerText = "Опитай се да познаеш числото";
     counter = 0;
     counterBox.innerText = counter;
+    playground.style.display = "none";
+    inputSetting.style.display = "block";
+}
+
+function startGame() {
+    maxNumber = maxNumberField.value;
+    maxNumberField.value = "";
     randomNumber = generateRandomNumber();
+
+    inputSetting.style.display = "none";
+    playground.style.display = "block";
 }
 
 function numberChange() {
