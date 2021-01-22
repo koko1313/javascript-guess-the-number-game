@@ -23,6 +23,15 @@ function check() {
     counter++;
     counterBox.innerText = counter;
 
+    if (insertedNumber > maxNumber) {
+        infoBox.innerText = `Въведеното число е по-голямо от лимита: ${maxNumber}`;
+        return;
+    }
+    else if (insertedNumber < 0) {
+        infoBox.innerText = `Диапазона е от 0 до ${maxNumber}`;
+        return;
+    }
+
     if (randomNumber == insertedNumber) {
         infoBox.innerText = "Браво! Ти позна!";
         inputField.style.display = "none";
