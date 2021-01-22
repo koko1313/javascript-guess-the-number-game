@@ -50,6 +50,7 @@ function reset() {
     inputField.style.display = "block";
     guessButton.style.display = "block";
     resetButton.style.display = "none";
+    startGameButton.disabled = true;
     infoBox.innerText = "Опитай се да познаеш числото";
     counter = 0;
     counterBox.innerText = counter;
