@@ -17,7 +17,7 @@ let randomNumber = null;
 // ############################################################
 
 function check() {
-    const insertedNumber = inputField.value;
+    const insertedNumber = Number(inputField.value);
     inputField.value = "";
 
     counter++;
@@ -58,7 +58,7 @@ function reset() {
 }
 
 function startGame() {
-    maxNumber = maxNumberField.value;
+    maxNumber = Number(maxNumberField.value);
     maxNumberField.value = "";
     randomNumber = generateRandomNumber();
 

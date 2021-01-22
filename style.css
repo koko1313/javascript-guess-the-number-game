@@ -26,7 +26,6 @@ input {
 }
 
 button {
-    width: 40%;
     height: 10vh;
     font-size: 5vh;
     margin-top: 2rem;
@@ -50,3 +49,9 @@ button {
 .game{
     text-align: center;
 }
+
+/* @media only screen and (max-width: 600px) {
+    button {
+        font-size: 3vh;
+    }
+} */
