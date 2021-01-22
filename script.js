@@ -6,6 +6,7 @@ const resetButton = document.getElementById("resetButton");
 const playground = document.getElementById("playground");
 const inputSetting = document.getElementById("inputSettings");
 const maxNumberField = document.getElementById("maxNumber");
+const startGameButton = document.getElementById("startGameButton");
 
 // ############################################################
 
@@ -64,4 +65,12 @@ function numberChange() {
 
 function generateRandomNumber() {
     return Math.floor(Math.random() * maxNumber);
+}
+
+function enableStartButton() {
+    if (maxNumberField.value != "") {
+        startGameButton.disabled = false;
+    } else {
+        startGameButton.disabled = true;
+    }
 }

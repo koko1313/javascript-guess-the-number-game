@@ -8,8 +8,8 @@
     <div class="game">
         <div id="inputSettings" >
             <p class="infoBox">Въведи максимално число</p>
-            <input type="number" id="maxNumber">
-            <button onClick="startGame()">Започни игра</button>
+            <input type="number" id="maxNumber" onkeyup="enableStartButton()">
+            <button id="startGameButton" onClick="startGame()" disabled>Започни игра</button>
         </div>
         <div id="playground">
             <p class="infoBox" id="infoBox">Опитай се да познаеш числото</p>
